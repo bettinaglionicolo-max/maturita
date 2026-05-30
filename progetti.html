@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Progetto Infosostenibile | PCTO Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#5e656d",
+                      "on-tertiary-container": "#ffede6",
+                      "on-primary-container": "#eeefff",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "warning": "#F59E0B",
+                      "secondary-fixed-dim": "#c0c7d0",
+                      "error-container": "#ffdad6",
+                      "primary-container": "#2563eb",
+                      "tertiary-fixed-dim": "#ffb596",
+                      "on-surface": "#191b23",
+                      "tertiary-container": "#bc4800",
+                      "tertiary": "#943700",
+                      "on-tertiary-fixed": "#360f00",
+                      "tertiary-fixed": "#ffdbcd",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "surface-bright": "#faf8ff",
+                      "surface-container-high": "#e7e7f3",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed": "#00174b",
+                      "surface-tint": "#0053db",
+                      "on-secondary-fixed-variant": "#40484f",
+                      "text-secondary": "#475569",
+                      "inverse-surface": "#2e3039",
+                      "outline-variant": "#c3c6d7",
+                      "secondary": "#585f67",
+                      "secondary-container": "#dce3ec",
+                      "surface-container-highest": "#e1e2ed",
+                      "primary-fixed": "#dbe1ff",
+                      "inverse-primary": "#b4c5ff",
+                      "surface-variant": "#e1e2ed",
+                      "on-background": "#191b23",
+                      "primary": "#004ac6",
+                      "success": "#10B981",
+                      "surface-container-low": "#f3f3fe",
+                      "outline": "#737686",
+                      "text-primary": "#0F172A",
+                      "surface-container": "#ededf9",
+                      "error": "#ba1a1a",
+                      "inverse-on-surface": "#f0f0fb",
+                      "background": "#FFFFFF",
+                      "on-secondary": "#ffffff",
+                      "surface": "#EFF6FF",
+                      "on-surface-variant": "#434655",
+                      "surface-dim": "#d9d9e5",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#dce3ec",
+                      "on-secondary-fixed": "#151c23",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#7d2d00",
+                      "on-primary-fixed-variant": "#003ea8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px",
+                      "2xl": "24px"
+              },
+              "spacing": {
+                      "container-max-width": "1200px",
+                      "grid-gap": "32px",
+                      "card-padding": "24px",
+                      "grid-gap-mobile": "16px",
+                      "section-padding-v": "80px"
+              },
+              "fontFamily": {
+                      "label": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "h1-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "h3": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "h2": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "h1": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "h1-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "h3": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "h2": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "h1": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-text-primary font-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center h-20 px-8 max-w-[1200px] mx-auto">
+<a class="font-h3 text-h3 font-extrabold text-primary" href="#">PCTO Portfolio</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="#">Diario</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Progetti</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="#">Competenze</a>
+</div>
+<button class="bg-primary-container text-on-primary rounded-full px-6 py-3 font-body-sm text-body-sm font-medium hover:scale-95 active:scale-90 transition-transform duration-200 hidden md:block">
+                Contatti
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="max-w-[1200px] mx-auto px-4 md:px-8 py-section-padding-v space-y-grid-gap">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-grid-gap items-center mb-16">
+<div class="col-span-1 md:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">eco</span>
+<span class="font-label text-label text-primary uppercase tracking-wider">Progetto Sostenibilità</span>
+</div>
+<h1 class="font-h1-mobile text-h1-mobile md:font-h1 md:text-h1 text-text-primary">
+                    Infosostenibile: <span class="text-primary">Goccia a Goccia</span>
+</h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl">
+                    Un'indagine approfondita sul consumo d'acqua durante le docce degli studenti del Liceo E. Amaldi, mirata a sensibilizzare e sorprendere il lettore con dati reali e tangibili sull'impatto ambientale ed economico.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-5">
+<div class="bg-surface rounded-2xl p-card-padding flex justify-center items-center h-full min-h-[300px] bento-shadow hover:scale-[1.02] transition-transform duration-300">
+<img alt="Rappresentazione professionale dei dati del progetto Infosostenibile, con laptop, grafici stampati e rivista su una scrivania moderna." class="w-full h-auto object-cover rounded-xl shadow-sm" src="https://lh3.googleusercontent.com/aida/ADBb0uizV5bEtUkF7s_c8gsGirdoVDoKzcQvZPOj-TLNmdd7nS2k_mTEnTzo_S_f8Ma9Hfc-QWH3I-Rclesgq6UdO4i0z38_HZuvxt4LaWz62HnHNaHxmTmI21hIEt8ZeN3Gi7ODtvFneInLj3CCwHudIz9Lw-b0G-J4aX9VO3VrP59DWnhDI6VDgKDFDJG9n2Osf3PNOSYp75kCkjyQIAbPgI0KP9OwztcRSRNUgS_TxIEDM-O7dUA00Ho-O80"/>
+</div>
+</div>
+</section>
+<!-- Bento Grid: The Challenge & Role -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-grid-gap">
+<!-- Leadership Role -->
+<div class="col-span-1 md:col-span-4 bg-white rounded-2xl p-card-padding bento-shadow flex flex-col justify-between border border-surface-variant">
+<div>
+<div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-2xl">group</span>
+</div>
+<h3 class="font-h3 text-h3 text-text-primary mb-4">Il Ruolo nel Team</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+                        In questo progetto ho ricoperto il ruolo di <strong>Team Leader</strong>. La sfida principale è stata coordinare il gruppo, Bettinaglio, Beretta, Rigon e Khadim, per trasformare una mole di dati grezzi in un articolo coerente e d'impatto.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface text-secondary text-xs rounded-full font-medium">Leadership</span>
+<span class="px-3 py-1 bg-surface text-secondary text-xs rounded-full font-medium">Analisi Dati</span>
+<span class="px-3 py-1 bg-surface text-secondary text-xs rounded-full font-medium">Copywriting</span>
+</div>
+</div>
+<!-- The Objective -->
+<div class="col-span-1 md:col-span-8 bg-surface rounded-2xl p-card-padding bento-shadow flex flex-col justify-center">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-white rounded-full mb-6">
+<span class="material-symbols-outlined text-warning text-sm" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<span class="font-label text-label text-text-primary">L'Obiettivo Primario</span>
+</div>
+<h3 class="font-h2 text-h2 text-text-primary mb-4">"Sorprendere il Lettore"</h3>
+<p class="font-body-lg text-body-lg text-text-secondary">
+                        L'obiettivo centrale che ci siamo prefissati era creare un contenuto che non fosse solo informativo, ma che riuscisse a colpire l'immaginazione. Volevamo tradurre numeri astratti in conseguenze pratiche, dimostrando come abitudini quotidiane apparentemente innocue, come prolungare la doccia, si traducano in uno spreco significativo di risorse preziose (acqua) e di denaro.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Data Insights Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-grid-gap">
+<div class="col-span-1 md:col-span-12">
+<h2 class="font-h2 text-h2 text-text-primary mb-8 text-center">I Risultati dell'Indagine</h2>
+</div>
+<!-- Article Image -->
+<div class="col-span-1 md:col-span-6 bg-white rounded-2xl p-2 bento-shadow border border-surface-variant hover:scale-[1.01] transition-transform duration-300">
+<img alt="Pagina dell'articolo pubblicato, con titolo 'Stai perdendo 317€ ogni anno... e il tuo tempo!', mostrando un grafico a barre sul consumo di acqua in doccia e una tabella riassuntiva dei costi." class="w-full h-auto rounded-[20px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWheI5BTga6E5JYnNPJ1-sg8nPilNXKzWvJPIZI1towLN8vJvJ-c8mlwgdnlblrGoqkdwXEDmCRW0aTd3pRwNcO0iXuSDpLwpQzKPQAQ8uLpNdcev1_izUBoiSy_TvcO-imYkyiKQlV-udnnbGt5p6Bebzi4I2ntaxVC2GqOrXZCzT569L83NwOm3NgANsiP-JrMapnX0UxgCfelOyTb8W_haTmvY5MpNOheGb3NlKjWFZ10cYTX3g0TyfdJF3lM5Sh__863H0zQGe"/>
+</div>
+<!-- Data Highlights -->
+<div class="col-span-1 md:col-span-6 flex flex-col gap-grid-gap">
+<div class="bg-white rounded-2xl p-card-padding bento-shadow border border-surface-variant flex-1 flex flex-col justify-center">
+<h3 class="font-h3 text-h3 text-text-primary mb-2">Il Campione</h3>
+<div class="flex items-end gap-4">
+<span class="text-5xl font-extrabold text-primary">299</span>
+<span class="font-body-md text-body-md text-text-secondary pb-1">studenti del Liceo E. Amaldi intervistati.</span>
+</div>
+</div>
+<div class="bg-error-container/30 rounded-2xl p-card-padding bento-shadow border border-error-container flex-1 flex flex-col justify-center">
+<h3 class="font-h3 text-h3 text-error mb-2">La Perdita Stimata</h3>
+<div class="flex items-end gap-4">
+<span class="text-4xl md:text-5xl font-extrabold text-error">€ 317</span>
+<span class="font-body-md text-body-md text-on-surface-variant pb-1">persi ogni anno da chi fa docce troppo lunghe.</span>
+</div>
+<p class="mt-4 font-body-sm text-body-sm text-on-surface-variant">
+                        I dati parlano chiaro: il 93% dei rispondenti perde fino a 423€ ogni anno. Proiettando questi dati su scala nazionale, si parlerebbe di uno spreco colossale.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Publication Section -->
+<section class="bg-primary text-on-primary rounded-2xl p-8 md:p-12 bento-shadow mt-8 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full mb-6">
+<span class="material-symbols-outlined text-white text-sm">stars</span>
+<span class="font-label text-label text-white uppercase">Traguardo Raggiunto</span>
+</div>
+<h3 class="font-h2 text-h2 text-white mb-4">Pubblicazione su Infosostenibile</h3>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim">
+                    La più grande soddisfazione del progetto è stata vedere il nostro articolo, intitolato "Stai perdendo 317€ ogni anno... e il tuo tempo!", pubblicato ufficialmente sul numero #107 della rivista Infosostenibile. Un riconoscimento concreto del lavoro di squadra e della validità della nostra analisi.
+                </p>
+</div>
+<div class="shrink-0">
+<div class="w-32 h-32 bg-white rounded-full flex items-center justify-center text-primary shadow-lg">
+<span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-12 mt-16 border-t border-surface-dim">
+<div class="flex flex-col md:flex-row justify-between items-center gap-grid-gap max-w-[1200px] mx-auto px-8">
+<div class="font-h3 text-h3 font-bold text-primary">PCTO Portfolio</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-all" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-all" href="#">Documentazione</a>
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-all" href="#">Contatti</a>
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-all" href="#">Credits</a>
+</div>
+<div class="font-body-sm text-body-sm text-text-secondary opacity-80">
+                © 2024 Portfolio PCTO - Percorso di Competenze Trasversali e Orientamento
+            </div>
+</div>
+</footer>
+</body></html>
